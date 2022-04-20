@@ -1,0 +1,43 @@
+/* : represent psedu class and :: represent psedu element. */
+/* sabhi ka color red ho jaega.*/
+:root{
+      font-size:30px;
+      color: red;
+}
+/* if i want to select particular li */
+li:first-child{
+    color:palevioletred;
+}
+li:last-child{
+    color:orange;
+}
+li:nth-of-type(3){
+     color:black;
+}
+li:nth-of-type(odd){
+    color:purple;
+}
+li:nth-of-type(even){
+    color:green;
+}
+/* Other way to write nth of type...2n+3 means 3 se start krega
+ and each 2 ke baad repeat krega...*/
+ li:nth-of-type(2n+3){
+     color:orange;
+ }
+/* Before create a psedu elements. */
+h1::before{
+    content: 'Before Heading';
+    color:green;
+    border: 3px dashed red;
+}
+h1::after{
+     content:'\2665';
+     color:black;
+}
+
+
+
+
+
+
